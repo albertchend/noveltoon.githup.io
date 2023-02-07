@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,700,800,900 display=swap');
+
+    *{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       scroll-behavior: smooth;
+    }
+    
+    #menu {
+   
+        background:#1c315e5e;
+        width: 100%;
+        height: 65px;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 500px; 
+     }
+     #menu ul {
+        list-style: none;
+        margin-left: 3px;
+     
+     }
+     #menu ul li {
+        float: left;
+        line-height: 65px
+     }
+     #menu ul li a {
+        float:left; 
+        width:100px; 
+        display:block; 
+        text-align:center; 
+        color:rgb(14, 1, 1); 
+        text-decoration:none; 
+        font-size: 25px;
+     }
+     #menu ul ul {
+        display:none; 
+        list-style:none; 
+        position:absolute; 
+        background-color:#26C4C2;
+        float: none;
+        top:65px; 
+        width:190px;
+     }
+     #menu ul li a:hover {
+        background-color:#2E9EA2; 
+        display:block;
+     }
+     #menu ul li:hover ul {
+        display:block;
+     }
+     #menu ul ul li a {
+        display:block;
+        padding-left:30px; 
+        text-align:left; 
+        width:160px;
+        height: 60px;
+        line-height: 60px;
+     }
+     #menu ul ul li a:hover {
+        color:#fff;
+     }
+    /*Setelah Nav*/
+table
+{
+	font: 1em/1.4 Cambria, serif;
+	max-width: 90em;
+}
+
+th, td
+{
+	position: relative;
+	text-align: justify;
+	vertical-align: top;
+}
+
+table h1, table h2, table p
+{
+	font-size: 1.4em;
+	margin: 2em;
+}
+
+td
+{
+	padding-left: 1em;
+}
+
+td :first-child
+{
+	margin-top: 1em;
+}
+
+td :last-child
+{
+	margin-bottom: 0;
+}
+
+table a
+{
+	display: block;
+	padding-right: 1em;
+	color: #0075A5;
+	text-decoration: none;
+}
+
+table a:hover, table a:focus
+{
+	color: #004575;
+}
+
+table a:hover img, table a:focus img
+{
+	filter: brightness(80%);
+}
+
+table a::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-style: solid;
+	border-width: 0 thin 0 0;
+}
+
+table a:hover::after
+{
+	background: rgba(35, 85, 165, 0.35);
+}
+
+@media (max-width: 30em)
+{
+	tr
+	{
+		display: table-row-group;
+		
+	}
+	td
+	{
+		display: table-row;
+	}
+	
+	table a::after
+	{
+		bottom: 1em;
+		border-width: 0 0 thin 0;
+	}
+}
+.karyaanakbangsa{
+   padding-top: 10px;
+}
+
+  /* STYLES SPECIFIC TO FOOTER  */
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+    margin-top: 60px;
+  }
+  .footer .col {
+    width: 300px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    color: white;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255, 255, 255, 0.879);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+.copyright{
+    font-size: 12px;
+}
+
+/* ABOTH  */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300i');
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:600');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+.nav__linkss{
+    list-style: none;
+ }
+ 
+ .nav__linkss li{
+    display: inline-block;
+    padding: 50px 50px;
+ }
+ 
+ .nav__linkss li a{
+    transition: all 0.3s ease 0s;
+ }
+ 
+ .nav__linkss li a:hover{
+    color: #DC3535;}
+
+.mainn {
+  background-image: url();
+  background-size: cover;
+}
+
+.titlee {
+  margin-left: 41.8%;
+  font-size: 2em;
+  min-width: 300px;
+  font-family: 'Signika Negative', sans-serif;
+  color: #494945;
+  padding-top: 5%;
+}
+
+.primary_imgg {
+  width: 300px;
+  height: 280px;
+  padding-left: 41%;
+  padding-right: auto;
+  display: block;
+
+}
+
+.sub_titlee {
+  font-family: 'Exo 2', sans-serif;
+  color: #f7f2e8;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.tribute_info {
+  font-size: 1.6em;
+  font-family: 'Pangolin', cursive;
+  color: #5e3901;
+  font-style: oblique;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 2%;
+  padding-left: 41.8%;
+}
+.beg {
+  color: black;
+}
+.coc  {
+  color: black;
+}
+.dth  {
+  color: black;
+}
+.here {
+  text-decoration: none;
+  color: #e2c353;
+}
+.here:hover {
+  color: red;
+}

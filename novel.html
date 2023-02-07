@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Novel Toon</title>
+        <link rel="stylesheet" type="text/css" href="./css/tugasbesar.css">
+        <link rel="shortcut icon" href="./multimedia/logowatach.png" type="icon"> 
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="./index.html"><img src="./multimedia/iconhome.png" height="50px"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- gambar -->
+<h1 class="title">ROMANCE NOVEL</h1>
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <a href="./argantara.html"><img class="slider__image" src="./multimedia/coverargantara2.jpg"></a>
+      <div class="slider__info">
+        <h2> ARGANTARA </h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <a href="./dearnathan.html"><img class="slider__image" src="./multimedia/dearnathancover2.jpg"></a>
+      <div class="slider__info">
+        <h2> DEAR NATHAN </h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <a href="./dilan.html"><img class="slider__image" src="./multimedia/coverdilan.jpg"></a>
+      <div class="slider__info">
+        <h2> DILAN </h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <a href="./mariposa.html"><img class="slider__image" src="./multimedia/covermariposa.jpg"></a>
+      <div class="slider__info">
+        <h2> MARIPOSA </h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <a href="./suratcintauntukstarla.html"><img class="slider__image" src="./multimedia/coversuratcintauntukstarla.jpg"></a>
+      <div class="slider__info">
+        <h2> SURAT CINTA UNTUK STARLA </h2><br>
+      </div>
+    </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./script.js"></script>
+
+    </body>
+</html>
